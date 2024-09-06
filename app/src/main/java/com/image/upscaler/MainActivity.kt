@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.ScaffoldDefaults
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.NavHost
@@ -33,7 +32,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
         // Handle the splash screen transition.
-        installSplashScreen()
         super.onCreate(savedInstanceState)
         val rootComponent = RootComponent(defaultComponentContext())
         setContent {
