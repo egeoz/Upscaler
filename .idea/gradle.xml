@@ -4,9 +4,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="testRunner" value="GRADLE" />
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -14,15 +13,12 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/common-models" />
             <option value="$PROJECT_DIR$/decompose" />
-            <option value="$PROJECT_DIR$/playstore" />
-            <option value="$PROJECT_DIR$/playstore/base" />
-            <option value="$PROJECT_DIR$/playstore/impl" />
-            <option value="$PROJECT_DIR$/playstore/no-op" />
             <option value="$PROJECT_DIR$/realesrgan" />
             <option value="$PROJECT_DIR$/realesrgan/android" />
             <option value="$PROJECT_DIR$/shared" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

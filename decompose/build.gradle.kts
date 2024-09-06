@@ -16,5 +16,5 @@ dependencies {
     api("com.arkivanov.decompose:decompose:$decompose_version")
     api("com.arkivanov.decompose:extensions-compose-jetbrains:$decompose_version")
     implementation(compose.runtime)
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
 }

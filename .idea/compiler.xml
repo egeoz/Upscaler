@@ -3,11 +3,23 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="android" target="11" />
+      <module name="SuperImage.app" target="17" />
+      <module name="SuperImage.buildSrc" target="17" />
+      <module name="SuperImage.buildSrc.main" target="17" />
+      <module name="SuperImage.buildSrc.test" target="17" />
       <module name="SuperImage.compose-desktop-preview" target="1.8" />
       <module name="SuperImage.compose-desktop-preview.main" target="1.8" />
       <module name="SuperImage.compose-desktop-preview.test" target="1.8" />
+      <module name="SuperImage.decompose" target="1.8" />
+      <module name="SuperImage.decompose.main" target="1.8" />
+      <module name="SuperImage.decompose.test" target="1.8" />
       <module name="SuperImage.playstore-no-op" target="11" />
+      <module name="SuperImage.playstore.base" target="17" />
+      <module name="SuperImage.playstore.impl" target="17" />
+      <module name="SuperImage.playstore.no-op" target="17" />
+      <module name="SuperImage.realesrgan.android" target="17" />
       <module name="SuperImage.review" target="11" />
+      <module name="SuperImage.shared" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

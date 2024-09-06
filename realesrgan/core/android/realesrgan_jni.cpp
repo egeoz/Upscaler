@@ -7,7 +7,7 @@
 #include "../upscaling.h"
 
 extern "C" JNIEXPORT jint JNICALL
-Java_com_zhenxiang_realesrgan_RealESRGAN_runUpscaling(
+Java_com_image_realesrgan_RealESRGAN_runUpscaling(
         JNIEnv *env,
         jobject /* thiz */,
         jobject progress_tracker,
@@ -19,28 +19,29 @@ Java_com_zhenxiang_realesrgan_RealESRGAN_runUpscaling(
 
     const mnn_model model = mnn_model_from_jbytes(env, model_data_jarray);
 
-    void* input_bitmap_buffer;
-    void* output_bitmap_buffer;
+    void *input_bitmap_buffer;
+    void *output_bitmap_buffer;
     AndroidBitmap_lockPixels(env, input_bitmap, &input_bitmap_buffer);
     AndroidBitmap_lockPixels(env, output_bitmap, &output_bitmap_buffer);
 
     const image_dimensions input_dimens = get_bitmap_dimensions(env, input_bitmap);
 
     const PixelMatrix input_image_matrix(
-            (int*) input_bitmap_buffer,
+            (int *) input_bitmap_buffer,
             input_dimens.height,
             input_dimens.width);
 
     PixelMatrix output_image_matrix(
-            (int*) output_bitmap_buffer,
+            (int *) output_bitmap_buffer,
             input_image_matrix.rows() * scale,
             input_image_matrix.cols() * scale);
 
     int result = 0;
 
     try {
-        run_inference(env, progress_tracker, coroutine_scope, &model, scale, input_image_matrix, output_image_matrix);
-    } catch (ImageTileInterpreterException& e) {
+        run_inference(env, progress_tracker, coroutine_scope, &model, scale, input_image_matrix,
+                      output_image_matrix);
+    } catch (ImageTileInterpreterException &e) {
         result = e.error;
     }
 

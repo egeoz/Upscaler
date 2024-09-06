@@ -24,7 +24,7 @@ kotlin {
 
 android {
 
-    namespace = "com.zhenxiang.superimage.shared"
+    namespace = "com.image.upscaler.shared"
     compileSdk = 33
 
     defaultConfig {
