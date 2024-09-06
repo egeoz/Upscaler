@@ -9,39 +9,28 @@ plugins {
 }
 
 android {
-    namespace = "com.zhenxiang.superimage"
+    namespace = "com.image.upscaler"
     compileSdk = 33
 
-    val changelogFileName = "changelog.txt"
-
     defaultConfig {
-        applicationId = "com.zhenxiang.superimage"
+        applicationId = "com.image.upscaler"
         minSdk = 24
         targetSdk = 33
-        versionCode = 134
-        versionName = "1.3.4"
-
-        buildConfigField("String", "CHANGELOG_ASSET_NAME", "\"$changelogFileName\"")
+        versionCode = 100
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    // Copy changelog for app assets
-    val copiedChangelogPath = File(buildDir, "generated/changelogAsset")
-    val copyArtifactsTask = tasks.register<Copy>("copyChangelog") {
-        delete(copiedChangelogPath)
-        from(File(rootProject.rootDir, "fastlane/metadata/android/en-US/changelogs/${defaultConfig.versionCode}.txt"))
-        into(copiedChangelogPath)
-        rename { changelogFileName }
-    }
-    tasks.preBuild {
-        dependsOn(copyArtifactsTask)
     }
 
     buildTypes {
         getByName("release") {
             isMinifyEnabled = true
-            setProguardFiles(listOf(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"))
+            setProguardFiles(
+                listOf(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
+                )
+            )
         }
 
         getByName("debug") {
@@ -50,12 +39,6 @@ android {
         }
     }
 
-    sourceSets {
-        getByName("main") {
-            // Add changelog to assets
-            assets.srcDirs(copiedChangelogPath)
-        }
-    }
     buildFeatures {
         compose = true
     }
@@ -77,12 +60,10 @@ android {
 dependencies {
 
     implementation(project(":decompose"))
-    "freeImplementation"(project(":playstore:no-op"))
-    "playstoreImplementation"(project(":playstore:impl"))
     implementation(project(":realesrgan:android"))
     implementation(project(":shared"))
 
-    val koin_android_version= "3.3.2"
+    val koin_android_version = "3.3.2"
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.core:core-splashscreen:1.0.0")

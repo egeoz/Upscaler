@@ -13,12 +13,9 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "SuperImage"
+rootProject.name = "Upscaler"
 include ':app'
 include ':common-models'
-include ':playstore:impl'
-include ':playstore:no-op'
-include ':playstore:base'
 include ':decompose'
 include ':shared'
 include ':realesrgan:android'

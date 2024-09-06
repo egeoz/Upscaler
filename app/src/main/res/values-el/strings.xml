@@ -1,6 +1,4 @@
 <resources>
-    <string name="font_family">@string/source_serif_pro_font</string>
-
     <string name="app_name">SuperImage</string>
 
     <string name="time_unit_space">\u0020</string>
@@ -55,8 +53,6 @@
     <string name="dark_label">Σκοτεινό</string>
     <string name="project_page_title">Σελίδα έργου</string>
     <string name="project_page_desc">Κάντε ερωτήσεις ή συνεισφέρετε στο GitHub</string>
-    <string name="telegram_group_title">Ομάδα Telegram</string>
-    <string name="telegram_group_desc">Γίνετε μέλος της ομάδας για υποστήριξη, συζητήσεις σχετικά με την επεξεργασία εικόνας AI και πράγματα εκτός θέματος</string>
     <string name="version_title">Έκδοση</string>
 
     <string name="upscaling_worker_notification_title">Μεγέθυνση %1$s</string>

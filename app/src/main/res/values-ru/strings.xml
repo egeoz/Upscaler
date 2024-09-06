@@ -1,7 +1,4 @@
 <resources>
-    <!-- Indicates the font to use for the locale -->
-    <string name="font_family">@string/source_serif_pro_font</string>
-
     <string name="app_name">SuperImage</string>
 
     <string name="time_unit_space">\u0020</string>
@@ -56,8 +53,6 @@
     <string name="dark_label">Тёмная</string>
     <string name="project_page_title">Страница проекта</string>
     <string name="project_page_desc">Задавайте вопросы или вносите вклад на GitHub</string>
-    <string name="telegram_group_title">Сообщетсво в Telegram</string>
-    <string name="telegram_group_desc">Вступите в группу для обсуждения тем ИИ или остальных разговоров</string>
     <string name="version_title">Версия</string>
 
     <string name="upscaling_worker_notification_title">Увеличение %1$s</string>

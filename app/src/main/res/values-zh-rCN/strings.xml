@@ -1,7 +1,4 @@
 <resources>
-    <!-- Indicates the font to use for the locale -->
-    <string name="font_family">@string/default_font</string>
-
     <string name="app_name">SuperImage</string>
 
     <string name="time_unit_space">\u0020</string>
@@ -55,8 +52,6 @@
     <string name="dark_label">深色</string>
     <string name="project_page_title">项目页面</string>
     <string name="project_page_desc">在Github上提问或作出贡献</string>
-    <string name="telegram_group_title">电报群组</string>
-    <string name="telegram_group_desc">加入群组寻求帮助，或讨论有关AI图像处理与其它话题</string>
     <string name="version_title">版本</string>
 
     <string name="upscaling_worker_notification_title">画质增强中 %1$s</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.SuperImage" parent="Theme.SplashScreen">
+    <style name="Theme.Upscaler" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@android:color/white</item>
         <item name="android:textColorPrimary">@android:color/black</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>

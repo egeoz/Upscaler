@@ -21,7 +21,7 @@
 #-renamesourcefileattribute SourceFile
 
 # Rules for native calls to Java function
--keepclassmembers class com.zhenxiang.realesrgan.JNIProgressTracker {
+-keepclassmembers class com.image.realesrgan.JNIProgressTracker {
     void setProgress(float, long);
 }
 -keep class kotlinx.coroutines.CoroutineScopeKt {

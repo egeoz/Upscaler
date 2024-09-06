@@ -1,8 +1,5 @@
 <resources>
-    <!-- Indicates the font to use for the locale -->
-    <string name="font_family">@string/default_font</string>
-
-    <string name="app_name">SuperImage</string>
+    <string name="app_name">Upscaler</string>
 
     <string name="time_unit_space">\u0020</string>
     <string name="word_space">\u0020</string>
@@ -29,6 +26,7 @@
     <string name="settings">Ayarlar</string>
     <string name="back">Geri</string>
 
+    <string name="out_of_memory_warning_hint">Cihaz hafızası bu işlem için yetersiz olabilir</string>
     <string name="original_image_resolution_label">Orijinal çözünürlük: %1$sx%2$s</string>
     <string name="output_image_resolution_label">Çıkan çözünürlük: %1$sx%2$s</string>
     <string name="select_image_wizard_hint">Başlamak için, çözünürlüğü yükseltilecek bir resim seçin</string>
@@ -55,8 +53,6 @@
     <string name="dark_label">Karanlık</string>
     <string name="project_page_title">Proje sayfası</string>
     <string name="project_page_desc">GitHub\'da soru sorun veya katılım yapın</string>
-    <string name="telegram_group_title">Telegram grubu</string>
-    <string name="telegram_group_desc">Destek, yapay zeka resim işleme hakkında konuşma, ve konu-dışı şeyler için gruba katılın</string>
     <string name="version_title">Sürüm</string>
 
     <string name="upscaling_worker_notification_title">%1$s Çözünürlüğü Yükseltilyor</string>
