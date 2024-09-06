@@ -53,8 +53,6 @@
     <string name="dark_label">Gelap</string>
     <string name="project_page_title">Halaman proyek</string>
     <string name="project_page_desc">Bertanya dan kontirbusi di GitHub</string>
-    <string name="telegram_group_title">Grup Telegram</string>
-    <string name="telegram_group_desc">Gabung grup untuk diskusi, bertanya, dan berkontribusi seputar pemrosesan gambar dengan AI.</string>
     <string name="version_title">Versi</string>
 
     <string name="upscaling_worker_notification_title">Memperbesar %1$s</string>

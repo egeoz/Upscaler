@@ -66,7 +66,6 @@ dependencies {
     val koin_android_version = "3.3.2"
 
     implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.core:core-splashscreen:1.0.0")
     implementation("androidx.lifecycle:lifecycle-process:2.6.0-beta01")
     implementation(compose.runtime)
     implementation(compose.foundation)
